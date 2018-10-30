@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Weathermabob</title>
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+	</head>
+	<body>
+		<div class="container">
+      <fieldset>
+        <form action="/" method="post">
+          <input name="ZIP" type="text" class="ghost-input" placeholder="Enter a ZIP code" required>
+          <input type="submit" class="ghost-button" value="Get Weather">
+        </form>
+        <% if (weather !== null) { %>
+          <p><%= weather %></p>
+        <% } %>
+        <% if (error !== null) { %>
+          <p><%= error %></p>
+        <% } %>
+      </fieldset>
+    </div>
+	</body>
+</html>
