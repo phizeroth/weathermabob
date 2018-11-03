@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const axios = require('axios');
 
 const app = express();
-
+const port = process.env.PORT || 3000;
 const apiKey = 'c252c0ddf26a962044ac300cd2525fdc';
 
 app.use(express.static('public'));
@@ -44,6 +44,6 @@ app.post('/', (req, res) => {
 	})
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
 	console.log('Weathermabob listening on port 3000');
 });
