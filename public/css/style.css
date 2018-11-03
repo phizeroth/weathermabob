@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
 body {
   width: 800px;
   margin: 0 auto;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Inconsolata', monospace;
 }
 .container {
   width: 600px;
@@ -37,7 +39,7 @@ fieldset {
   box-sizing: border-box;
   color: #4b545f;
   background: #fff;
-  font-family: Open Sans,Verdana;
+  font-family: 'Inconsolata', monospace;
   padding: 10px 15px;
   margin: 30px 0px;
   -webkit-transition: all 0.1s ease-in-out;
@@ -60,6 +62,8 @@ fieldset {
   -ms-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+  font-family: 'Inconsolata', monospace;
+  font-size: 15px;
 }
 .ghost-button:hover {
   border:2px solid #515151;
